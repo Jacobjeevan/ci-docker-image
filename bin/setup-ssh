@@ -11,6 +11,7 @@ fi
 log-info "Setting up SSH Key"
 
 mkdir -p /root/.ssh
+export SSH_KEY_FILE="$(ls ~/.ssh | grep id_rsa_038)"
 cp ~/.ssh/$SSH_KEY_FILE /root/.ssh/id_rsa
 chmod 600 /root/.ssh/id_rsa
 chmod 700 /root/.ssh
