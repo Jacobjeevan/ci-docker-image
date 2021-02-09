@@ -8,6 +8,7 @@ if [ -n "$PLUGIN_SSH_PRIVATE_KEY" ]; then
   export SSH_PRIVATE_KEY="$PLUGIN_SSH_PRIVATE_KEY"
 fi
 if [ -n "$SSH_KEY_FILE" ]; then
+  log-info "Setting SSH KEY FILE"
   export SSH_KEY_FILE="$SSH_KEY_FILE"
 fi
 
